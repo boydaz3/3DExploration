@@ -264,8 +264,8 @@ MonoBehaviour:
   bodyCatchupSpeed: 2.5
   inputResponseFiltering: 2.5
   enableMovementControl: 1
-  walkingSpeed: 140
-  sprintingSpeed: 240
+  walkingSpeed: 162
+  sprintingSpeed: 435
   crouchingSpeed: 45
   decelerationSpeed: 240
   sprintKey_L: 304
@@ -327,7 +327,7 @@ MonoBehaviour:
     groundPhysicMaterial: {fileID: 0}
   enableStaminaSystem: 1
   jumpingDepletesStamina: 1
-  Stamina: 100
+  Stamina: 168
   currentStaminaLevel: 0
   s_minimumStaminaToSprint: 5
   s_depletionSpeed: 2
