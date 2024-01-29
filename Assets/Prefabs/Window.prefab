@@ -3327,7 +3327,7 @@ MonoBehaviour:
       m_Rotation: 0
       m_Anchor: 9
     m_Material: {fileID: 0}
-    m_SubmeshIndex: 0
+    m_SubmeshIndex: 1
     m_ManualUV: 0
     elementGroup: -1
     m_TextureGroup: -1
@@ -6106,11 +6106,19 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 3205
+  m_VersionIndex: 3209
   m_IsSelectable: 1
-  m_SelectedFaces: 
-  m_SelectedEdges: []
-  m_SelectedVertices: 
+  m_SelectedFaces: c0000000
+  m_SelectedEdges:
+  - a: 768
+    b: 769
+  - a: 770
+    b: 768
+  - a: 769
+    b: 771
+  - a: 771
+    b: 770
+  m_SelectedVertices: 00030000010300000203000003030000
 --- !u!114 &8259580387215912944
 MonoBehaviour:
   m_ObjectHideFlags: 0

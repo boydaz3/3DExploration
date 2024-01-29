@@ -1155,7 +1155,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1068645614254378135}
   m_Layer: 0
-  m_Name: Lightpost1
+  m_Name: Lightpost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
