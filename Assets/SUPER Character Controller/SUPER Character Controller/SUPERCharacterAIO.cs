@@ -104,7 +104,7 @@ public class SUPERCharacterAIO : MonoBehaviour{
 
     //Walking/Sprinting/Crouching
     [Range(1.0f,650.0f)]public float walkingSpeed = 140, sprintingSpeed = 260, crouchingSpeed = 45;
-    [Range(1.0f,400.0f)] public float decelerationSpeed=240;
+    [Range(0.1f,400.0f)] public float decelerationSpeed=0.1f;
     #if ENABLE_INPUT_SYSTEM
     public Key sprintKey = Key.LeftShift, crouchKey = Key.LeftCtrl, slideKey = Key.V;
     #else
@@ -1784,7 +1784,7 @@ public class SuperFPEditor : Editor{
             t.sprintKey_L = (KeyCode)EditorGUILayout.EnumPopup(new GUIContent("Sprint Key", "The Key used to enter a sprint."),t.sprintKey_L);
             #endif
             t.sprintingSpeed = EditorGUILayout.Slider(new GUIContent("Sprinting Speed", "How quickly can the player move while sprinting?"),t.sprintingSpeed,t.walkingSpeed+1,650);
-            t.decelerationSpeed = EditorGUILayout.Slider(new GUIContent("Deceleration Factor", "Behaves somewhat like a braking force"),t.decelerationSpeed,1,300);
+            t.decelerationSpeed = EditorGUILayout.Slider(new GUIContent("Deceleration Factor", "Behaves somewhat like a braking force"),t.decelerationSpeed,0.01f,300);
             EditorGUILayout.EndVertical();
 
             EditorGUILayout.Space();
