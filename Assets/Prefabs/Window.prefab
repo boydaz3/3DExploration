@@ -6108,17 +6108,9 @@ MonoBehaviour:
   m_Mesh: {fileID: 0}
   m_VersionIndex: 3209
   m_IsSelectable: 1
-  m_SelectedFaces: c0000000
-  m_SelectedEdges:
-  - a: 768
-    b: 769
-  - a: 770
-    b: 768
-  - a: 769
-    b: 771
-  - a: 771
-    b: 770
-  m_SelectedVertices: 00030000010300000203000003030000
+  m_SelectedFaces: 
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!114 &8259580387215912944
 MonoBehaviour:
   m_ObjectHideFlags: 0
