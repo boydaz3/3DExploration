@@ -1,32 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class GunMove : MonoBehaviour
 {
-    public float armRotationSpeed = 5f;
-    public float delayBeforeArmsMove = 2f;
+    public float rotationSpeed = 5f;
+    public float dampingFactor = 5f;
+    public float delayBeforeMovement = 5f;
+
+    private Transform playerCamera;
 
     void Start()
     {
-        StartCoroutine(MoveArmsWithDelay());
+        playerCamera = Camera.main.transform;
+        StartCoroutine(DelayedGunMovement());
     }
-
-    IEnumerator MoveArmsWithDelay()
+    
+    IEnumerator DelayedGunMovement()
     {
-        yeild return new WaitForSeconds(delayBeforeArmsMove);
+        yield return new WaitForSeconds(delayBeforeMovement);
+            Vector3 targetDirection = playerCamera.forward;
+            Quaternion targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
 
-        while(true)
-    }
-
-    void Update()
-    {
-        if (main.camra != null)
-        { 
-        Vector3D
-0        
-        }
-
+            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSpeed / dampingFactor);
     }
 }
