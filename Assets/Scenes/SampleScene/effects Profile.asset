@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8945155855078506466
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 899c54efeace73346a0a16faa3afe726, type: 3}
+  m_Name: Vignette
+  m_EditorClassIdentifier: 
+  active: 1
+  color:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 0, a: 1}
+  center:
+    m_OverrideState: 1
+    m_Value: {x: 0.5, y: 0.5}
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.417
+  smoothness:
+    m_OverrideState: 1
+    m_Value: 0.227
+  rounded:
+    m_OverrideState: 1
+    m_Value: 0
 --- !u!114 &-7429261511606045104
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -116,6 +144,47 @@ MonoBehaviour:
   - {fileID: 4264539910760943142}
   - {fileID: -1622591049622636860}
   - {fileID: -2710002347648809018}
+  - {fileID: -8945155855078506466}
+  - {fileID: 1303064653798739707}
+  - {fileID: 308116114499686364}
+--- !u!114 &308116114499686364
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
+  m_Name: LiftGammaGain
+  m_EditorClassIdentifier: 
+  active: 1
+  lift:
+    m_OverrideState: 1
+    m_Value: {x: 0.9062575, y: 1, z: 0.9527234, w: 0}
+  gamma:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0.75591797, z: 0.95722157, w: 0}
+  gain:
+    m_OverrideState: 1
+    m_Value: {x: 0.6536808, y: 0.72430754, z: 1, w: 0}
+--- !u!114 &1303064653798739707
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81180773991d8724ab7f2d216912b564, type: 3}
+  m_Name: ChromaticAberration
+  m_EditorClassIdentifier: 
+  active: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.3
 --- !u!114 &4264539910760943142
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -137,10 +206,10 @@ MonoBehaviour:
     m_Value: 2.03
   intensity:
     m_OverrideState: 1
-    m_Value: 26.5
+    m_Value: 6.79
   scatter:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.227
   clamp:
     m_OverrideState: 1
     m_Value: 65472
