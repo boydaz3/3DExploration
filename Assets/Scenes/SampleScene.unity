@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 07a304375c23a724991ed0430955e970, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 510ac83380c2c534aaf24d283aabfdd6, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.24386424, g: 0.5904131, b: 0.9323822, a: 1}
+  m_IndirectSpecularColor: {r: 0.99999905, g: 0, b: 0.99999905, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -713,7 +713,7 @@ ParticleSystemRenderer:
   m_SortingFudge: 0
   m_NormalDirection: 1
   m_ShadowBias: 0
-  m_RenderAlignment: 0
+  m_RenderAlignment: 1
   m_Pivot: {x: 0, y: 0, z: 0}
   m_Flip: {x: 0, y: 0, z: 0}
   m_EnableGPUInstancing: 1
@@ -1253,7 +1253,7 @@ ParticleSystem:
     startRotation:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: -0.50823987
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -1372,7 +1372,7 @@ ParticleSystem:
     radiusThickness: 1
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
-    m_Rotation: {x: 0, y: 0, z: 0}
+    m_Rotation: {x: 69.413, y: 90, z: 90}
     m_Scale: {x: 104.5, y: 127.8, z: 1}
     placementMode: 0
     m_MeshMaterialIndex: 0
@@ -1571,7 +1571,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1000
+      scalar: 10000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -5465,13 +5465,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205255315}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.6957266, y: 0.12635083, z: 0.1263509, w: 0.6957266}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.6, y: 60.8, z: 7.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 69.413, y: 90, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &220288032
 GameObject:
   m_ObjectHideFlags: 0
@@ -23315,7 +23315,7 @@ MonoBehaviour:
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
-  m_Antialiasing: 0
+  m_Antialiasing: 1
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
@@ -27183,6 +27183,51 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!1 &1271887548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1271887550}
+  - component: {fileID: 1271887549}
+  m_Layer: 0
+  m_Name: Clouds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1271887549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271887548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8310f91f2484df445bd2de5b23bac526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hideReflectionCamera: 1
+--- !u!4 &1271887550
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271887548}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1284354211
 Mesh:
   m_ObjectHideFlags: 0
@@ -27923,6 +27968,41 @@ PrefabInstance:
     - target: {fileID: 2535954103604261512, guid: 838c0bef810bfe94d8e33947c3cba7c6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2535954103604261515, guid: 838c0bef810bfe94d8e33947c3cba7c6,
+        type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2535954103604261515, guid: 838c0bef810bfe94d8e33947c3cba7c6,
+        type: 3}
+      propertyPath: m_BackGroundColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2535954103604261515, guid: 838c0bef810bfe94d8e33947c3cba7c6,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2535954103604261515, guid: 838c0bef810bfe94d8e33947c3cba7c6,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2535954103604261515, guid: 838c0bef810bfe94d8e33947c3cba7c6,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2535954103604261517, guid: 838c0bef810bfe94d8e33947c3cba7c6,
+        type: 3}
+      propertyPath: m_Antialiasing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2535954103604261517, guid: 838c0bef810bfe94d8e33947c3cba7c6,
+        type: 3}
+      propertyPath: m_RenderPostProcessing
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2535954103604261519, guid: 838c0bef810bfe94d8e33947c3cba7c6,
@@ -30268,7 +30348,7 @@ PrefabInstance:
     - target: {fileID: 6817638361354391144, guid: 32fce1012f8c24c43af86f00f457f500,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.48
+      value: 4.58
       objectReference: {fileID: 0}
     - target: {fileID: 6817638361354391144, guid: 32fce1012f8c24c43af86f00f457f500,
         type: 3}
@@ -30929,3 +31009,4 @@ SceneRoots:
   - {fileID: 1847415735}
   - {fileID: 1380001386}
   - {fileID: 205255318}
+  - {fileID: 1271887550}
