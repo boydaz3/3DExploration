@@ -53,6 +53,40 @@ MonoBehaviour:
   texture:
     m_OverrideState: 0
     m_Value: {fileID: 2800000, guid: 9a3c8809c5b283f4494f137c95bbafb2, type: 3}
+--- !u!114 &-3515822423176995996
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 558a8e2b6826cf840aae193990ba9f2e, type: 3}
+  m_Name: ShadowsMidtonesHighlights
+  m_EditorClassIdentifier: 
+  active: 1
+  shadows:
+    m_OverrideState: 1
+    m_Value: {x: 0.96024364, y: 0.7401447, z: 1, w: -0.5867971}
+  midtones:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
+  highlights:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: 1}
+  shadowsStart:
+    m_OverrideState: 1
+    m_Value: 0
+  shadowsEnd:
+    m_OverrideState: 1
+    m_Value: 0.3
+  highlightsStart:
+    m_OverrideState: 1
+    m_Value: 0.55
+  highlightsEnd:
+    m_OverrideState: 1
+    m_Value: 1
 --- !u!114 &-2710002347648809018
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -120,7 +154,7 @@ MonoBehaviour:
     m_Value: 20.4
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_Value: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
   hueShift:
     m_OverrideState: 1
     m_Value: 0
@@ -147,6 +181,7 @@ MonoBehaviour:
   - {fileID: -8945155855078506466}
   - {fileID: 1303064653798739707}
   - {fileID: 308116114499686364}
+  - {fileID: -3515822423176995996}
 --- !u!114 &308116114499686364
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -162,13 +197,13 @@ MonoBehaviour:
   active: 1
   lift:
     m_OverrideState: 1
-    m_Value: {x: 0.9062575, y: 1, z: 0.9527234, w: 0}
+    m_Value: {x: 0.9992252, y: 0.9953585, z: 1, w: 0}
   gamma:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.75591797, z: 0.95722157, w: 0}
+    m_Value: {x: 0.5780103, y: 1, z: 0.8214742, w: 0}
   gain:
     m_OverrideState: 1
-    m_Value: {x: 0.6536808, y: 0.72430754, z: 1, w: 0}
+    m_Value: {x: 0.15925771, y: 0.19177689, z: 1, w: 0}
 --- !u!114 &1303064653798739707
 MonoBehaviour:
   m_ObjectHideFlags: 3
