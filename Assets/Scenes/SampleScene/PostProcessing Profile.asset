@@ -28,25 +28,6 @@ MonoBehaviour:
   saturation:
     m_OverrideState: 1
     m_Value: 0
---- !u!114 &-256232448496314194
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb60a22f311433c4c962b888d1393f88, type: 3}
-  m_Name: PaniniProjection
-  m_EditorClassIdentifier: 
-  active: 1
-  distance:
-    m_OverrideState: 1
-    m_Value: 0.357
-  cropToFit:
-    m_OverrideState: 1
-    m_Value: 1
 --- !u!114 &-34485265725758137
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -71,7 +52,7 @@ MonoBehaviour:
     m_Value: 10
   scatter:
     m_OverrideState: 1
-    m_Value: 0.616
+    m_Value: 0.325
   clamp:
     m_OverrideState: 1
     m_Value: 65472
@@ -110,55 +91,7 @@ MonoBehaviour:
   - {fileID: 8306031184417336089}
   - {fileID: -34485265725758137}
   - {fileID: -7420329865852990527}
-  - {fileID: 5666563032934639114}
   - {fileID: 9015849068909986362}
-  - {fileID: -256232448496314194}
---- !u!114 &5666563032934639114
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c01700fd266d6914ababb731e09af2eb, type: 3}
-  m_Name: DepthOfField
-  m_EditorClassIdentifier: 
-  active: 1
-  mode:
-    m_OverrideState: 1
-    m_Value: 1
-  gaussianStart:
-    m_OverrideState: 1
-    m_Value: 29.98
-  gaussianEnd:
-    m_OverrideState: 1
-    m_Value: 11.55
-  gaussianMaxRadius:
-    m_OverrideState: 1
-    m_Value: 1.189
-  highQualitySampling:
-    m_OverrideState: 1
-    m_Value: 0
-  focusDistance:
-    m_OverrideState: 0
-    m_Value: 10
-  aperture:
-    m_OverrideState: 0
-    m_Value: 5.6
-  focalLength:
-    m_OverrideState: 0
-    m_Value: 50
-  bladeCount:
-    m_OverrideState: 0
-    m_Value: 5
-  bladeCurvature:
-    m_OverrideState: 0
-    m_Value: 1
-  bladeRotation:
-    m_OverrideState: 0
-    m_Value: 0
 --- !u!114 &8306031184417336089
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -205,7 +138,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.464
+    m_Value: 0.133
   clamp:
     m_OverrideState: 1
     m_Value: 0.05
