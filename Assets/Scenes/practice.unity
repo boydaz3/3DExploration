@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.00022035404, g: 0.0018401974, b: 0.012439098, a: 1}
+  m_IndirectSpecularColor: {r: 0.00020128633, g: 0.0018410925, b: 0.012517116, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -99,7 +99,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 9ede988532f274749af51fbe3a4ed4cc,
     type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: c527dfb2ec607224a8fafb8c5047d2f2,
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 369065519999d874b846fa189b2c20e0,
     type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -389,11 +389,11 @@ Light:
   m_GameObject: {fileID: 560679393}
   m_Enabled: 1
   serializedVersion: 10
-  m_Type: 4
+  m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9924528, g: 0.4615331, b: 0.25279447, a: 1}
-  m_Intensity: 1
-  m_Range: 10
+  m_Intensity: 10
+  m_Range: 4.4343853
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -437,7 +437,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 1e-45, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 12, y: 0, z: 0.083984375, w: 38.4}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
@@ -1523,7 +1523,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10
+      scalar: 15
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -1648,13 +1648,13 @@ ParticleSystem:
           inWeight: 0.33333334
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 0.9360962
-          value: 0.655386
-          inSlope: 1
-          outSlope: 1
+          time: 0.8699951
+          value: 0.48568714
+          inSlope: -0.105155155
+          outSlope: -0.105155155
           tangentMode: 0
           weightedMode: 0
-          inWeight: 0.33333334
+          inWeight: 0.15644999
           outWeight: 0.33333334
         m_PreInfinity: 2
         m_PostInfinity: 2
@@ -1969,7 +1969,7 @@ ParticleSystem:
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
-        ctime0: 0
+        ctime0: 1002
         ctime1: 65535
         ctime2: 0
         ctime3: 0
@@ -1977,7 +1977,7 @@ ParticleSystem:
         ctime5: 0
         ctime6: 0
         ctime7: 0
-        atime0: 42020
+        atime0: 38319
         atime1: 65535
         atime2: 0
         atime3: 0
@@ -5418,7 +5418,7 @@ Transform:
   m_GameObject: {fileID: 1230614767}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 161.50044, y: 33, z: 238.08401}
+  m_LocalPosition: {x: 158.34, y: 32.42, z: 238.26}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10449,7 +10449,7 @@ Transform:
   m_GameObject: {fileID: 1914224585}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -0.66, z: -0.11}
+  m_LocalPosition: {x: -0.74, y: 1.1, z: -0.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -10783,8 +10783,8 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2
-      minScalar: 1
+      scalar: 3
+      minScalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -11164,7 +11164,7 @@ ParticleSystem:
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
-    radiusThickness: 0.5
+    radiusThickness: 0
     donutRadius: 0.2
     m_Position: {x: 0, y: 0, z: 0}
     m_Rotation: {x: 0, y: 0, z: 0}
@@ -11247,7 +11247,7 @@ ParticleSystem:
     sphericalDirectionAmount: 0
     randomPositionAmount: 0
     radius:
-      value: 1
+      value: 0.5
       mode: 0
       spread: 0
       speed:
@@ -11483,7 +11483,7 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 0.516922
+          value: 0.633049
           inSlope: 0
           outSlope: 0
           tangentMode: 0
@@ -11813,7 +11813,7 @@ ParticleSystem:
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
-        ctime1: 24595
+        ctime1: 34618
         ctime2: 65535
         ctime3: 0
         ctime4: 0
@@ -11821,7 +11821,7 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 65535
+        atime1: 61140
         atime2: 0
         atime3: 0
         atime4: 0
