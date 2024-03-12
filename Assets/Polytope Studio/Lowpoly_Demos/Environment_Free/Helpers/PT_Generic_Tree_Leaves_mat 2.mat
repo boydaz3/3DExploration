@@ -96,9 +96,9 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
-    - _Gradient: 0.105
+    - _Gradient: 0.07
     - _GradientPower: 5.91
-    - _LeavesThickness: 0.445
+    - _LeavesThickness: 0.95
     - _MaskClipValue: 0.5
     - _Metallic: 0
     - _Mode: 3
